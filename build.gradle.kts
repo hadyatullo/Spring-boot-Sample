@@ -9,7 +9,7 @@ plugins {
 	kotlin("plugin.allopen") version "1.3.72"
 }
 
-group = "tj.abad"
+group = "com.example"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
