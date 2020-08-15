@@ -20,7 +20,7 @@ COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --info
 
-FROM openjdk:11-jdk-alpine
+FROM adoptopenjdk/openjdk11
 
 EXPOSE 8080
 
