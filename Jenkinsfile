@@ -3,7 +3,7 @@
 pipeline {
     stage('docker build') {
         steps {
-            sh 'DOCKER_BUILDKIT=1 docker build -t abadtj/demo .'
+            sh 'docker build -t abadtj/demo .'
         }
     }
 
