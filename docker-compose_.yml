@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  smart-sokhtmon-backend:
+    container_name: smart-sokhtmon-backend
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
