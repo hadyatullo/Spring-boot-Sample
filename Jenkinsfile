@@ -1,15 +1,15 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    stage('docker build') {
+    stage('docker-compose build') {
         steps {
-            sh 'docker build -t abadtj/demo .'
+            sh 'docker-compose build'
         }
     }
 
-    stage('docker up') {
+    stage('docker-compose up') {
         steps {
-            sh 'docker run -p 8080:8080 abadtj/demo'
+            sh 'docker-compose up -d'
         }
     }
 }
